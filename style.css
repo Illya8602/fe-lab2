@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 650px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.custom-table td {
+  border: 2px solid #000000;
+}
+
+.custom-table .row-1 td {
+  background-color: #448f8f;
+  color: #ffffff;
+  padding: 18px 12px;
+  font-size: 16px;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.custom-table .row-mid-1 td,
+.custom-table .row-mid-2 td {
+  height: 21px;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  background-color: #ffffff;
+}
+
+.custom-table .row-3 td {
+  background-color: #f5f544;
+  color: #1a1a1a;
+  padding: 4px 8px;
+  font-size: 14px;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.custom-table .row-1:hover td {
+  background-color: #f5f544;
+  color: #1a1a1a;
+}
+
+.custom-table .row-3:hover td {
+  background-color: #448f8f;
+  color: #ffffff;
+}
+
+.art-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.canvas-box {
+  text-align: center;
+}
+
+.canvas-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.canvas {
+  position: relative;
+  width: 240px;
+  height: 240px;
+}
+
+.circle {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+
+.circle-top-pos {
+  top: 15px;
+  left: 65px;
+  background-color: rgba(240, 98, 98, 0.65);
+}
+
+.circle-left-pos {
+  top: 85px;
+  left: 25px;
+  background-color: rgba(94, 158, 214, 0.65);
+}
+
+.circle-right-pos {
+  top: 85px;
+  left: 105px;
+  background-color: rgba(98, 196, 137, 0.65);
+}
+
+.circle-top-tf,
+.circle-left-tf,
+.circle-right-tf {
+  top: 0;
+  left: 0;
+}
+
+.circle-top-tf {
+  transform: translate(65px, 15px);
+  background-color: rgba(240, 98, 98, 0.65);
+}
+
+.circle-left-tf {
+  transform: translate(25px, 85px);
+  background-color: rgba(94, 158, 214, 0.65);
+}
+
+.circle-right-tf {
+  transform: translate(105px, 85px);
+  background-color: rgba(98, 196, 137, 0.65);
+}
